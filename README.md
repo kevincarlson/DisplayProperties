@@ -3,6 +3,10 @@ DisplayProperties
 
 A small utility to show various properties of a computer display.
 
+## Features
+
+The utility calculates pixel density (pixels per inch) and screen dimensions (in inches) based on the screen's horizontal and vertical resolution, and the diagonal size of the screen (in inches).
+
 ## Building
 
 The Display Properties utility depends on QT, and compiles with qmake. In a Linux terminal, simply enter the source directory, run qmake, and run make to get the executable file.
