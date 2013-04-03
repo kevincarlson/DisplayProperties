@@ -18,11 +18,23 @@ double DisplayPanel::getPixelsPerInch() {
 }
 
 double DisplayPanel::getHorizontalSize() {
-    return horizontalResolution / getPixelsPerInch();
+    double result = 0;
+
+    if (getPixelsPerInch() > 0) {
+        result = horizontalResolution / getPixelsPerInch();
+    }
+
+    return result;
 }
 
 double DisplayPanel::getVerticalSize() {
-    return verticalResolution / getPixelsPerInch();
+    double result = 0;
+
+    if (getPixelsPerInch() > 0) {
+        result = verticalResolution / getPixelsPerInch();
+    }
+
+    return result;
 }
 
 void DisplayPanel::setHorizontalResolution(int val) {
